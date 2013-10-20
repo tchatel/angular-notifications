@@ -1,0 +1,371 @@
+
+body {
+    background-color: #2d301b;
+    width: 840px;
+    margin: 10px auto 10px auto;
+    padding: 0;
+}
+
+#content {
+    background-color: #dad295;
+    margin: 0;
+    padding: 1em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#content-bottom {
+    clear: both;
+}
+
+#footer {
+    color: #aaa;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px;
+}
+#footer a {
+    color: #88f;
+}
+#footer a:visited {
+    color: #66f;
+}
+
+h1 {
+    background-color: #edc70a;
+    margin: 0;
+    padding: 0.2em 0 0.2em 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #242815;
+}
+
+h2 {
+    margin: 0 0 0.5em 0;
+    color: #242815;
+}
+
+ul#menu {
+    background-color: #394c14;
+    margin: 0;
+    padding: 0.3em;
+}
+ul#menu li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    font-size: 1.1em;
+    color: #fff;
+    border-right: solid 1px #000;
+}
+ul#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------------------------------- Notifications ------------------------------------------------------------------------*/
+
+#notifications {
+    position: absolute;
+    top: 70px;
+    left: 600px;
+}
+#notifications ul {
+}
+#notifications ul li {
+    width: 320px;
+    margin: 0;
+    padding: 3px 10px 3px 10px;
+    color: black;
+    background-color: #FBFCC7;
+    border: solid 1px #777;
+    border-top: none;
+    list-style-type: none;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+#notifications ul li a {
+    float: right;
+    padding-left: 5px;
+}
+#notifications ul li:first-child {
+    border-top: solid 1px #777;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+#notifications ul li:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/* ------------------------------- Catalog ------------------------------------------------------------------------*/
+ul#catalog {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+ul#catalog li {
+    float: left;
+    display: inline-block;
+    list-style-type: none;
+    width: 180px;
+    height: 240px;
+    margin: 4px;
+    padding: 5px;
+    border: solid 1px grey;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #809060;
+}
+
+ul#catalog li div.header {
+    height: 114px;
+}
+ul#catalog li div.text {
+    height: 102px;
+}
+ul#catalog li div.footer {
+}
+
+ul#catalog li h3 {
+    margin: 0;
+    padding: 0 0 0.3em 0;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px #888;
+}
+
+ul#catalog li img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+ul#catalog li p {
+    padding: 0;
+    margin: 0.3em 0 0.3em 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+ul#catalog li p.designer {
+    font-style: italic;
+}
+ul#catalog li p.intro {
+}
+ul#catalog li div.footer span.price {
+    float: left;
+    color: #8b0000;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: bold;
+}
+ul#catalog li div.footer button {
+    float: right;
+    font-size: 0.7em;
+    padding: 1px 3px 1px 3px;
+    background-color: #d0b712;
+    color: #111;
+    border: solid 1px #5a6636;
+    border-radius: 2px;
+}
+ul#catalog li div.footer button:hover {
+    background-color: #fade11;
+    color: #000;
+    border: solid 1px #452;
+}
+ul#catalog li div.footer button:active {
+    background-color: #8b6d0d;
+}
+
+/* ------------------------------- Game ------------------------------------------------------------------------*/
+
+div#game img#box {
+    float: left;
+    max-width: 160px;
+    max-height: 160px;
+}
+div#game div#details {
+    margin-left: 180px;
+}
+div#game div#details p.designer {
+    font-size: 0.85em;
+    font-style: italic;
+}
+div#game div#details p.intro {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 1em 0 1em 0;
+}
+div#game div#details p.desc {
+    font-size: 0.9em;
+}
+
+div#game div#footer {
+    margin-left: 570px;
+}
+div#game div#footer span.price {
+    color: #8b0000;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: bold;
+}
+div#game div#footer button {
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    background-color: #d0b712;
+    color: #111;
+    border: solid 1px #5a6636;
+    border-radius: 3px;
+}
+div#game div#footer button:hover {
+    background-color: #fade11;
+    color: #000;
+    border: solid 1px #452;
+}
+div#game div#footer button:active {
+    background-color: #8b6d0d;
+}
+
+div#game div#images {
+    clear: both;
+    padding-top: 2em;
+    text-align: center;
+}
+div#game div#images .image {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin:5px;
+}
+div#game div#images .image img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* ------------------------------- Cart ------------------------------------------------------------------------*/
+
+table#cart {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table#cart th,td {
+    padding: 3px 5px 3px 5px;
+    border: solid 1px #2d301b;
+    margin: 0;
+}
+table#cart th {
+    background-color: #7b6c05;
+    text-align: center;
+}
+table#cart th.item {
+    width: 53%;
+}
+table#cart th.price {
+    width: 10%;
+}
+table#cart th.qty {
+    width: 12%;
+}
+table#cart th.total {
+    width: 15%;
+}
+
+table#cart td.img {
+    vertical-align: middle;
+}
+table#cart td.img {
+    width: 55px;
+    text-align: center;
+    border-right: none;
+}
+table#cart td.img img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 5px;
+}
+table#cart td.item {
+    width: 55%;
+    border-left: none;
+}
+table#cart td.item a {
+    text-decoration: none;
+    color: #000;
+}
+table#cart td.price {
+    width: 10%;
+    text-align: right;
+}
+table#cart td.qty {
+    width: 15%;
+    text-align: center;
+}
+table#cart td.qty input {
+    width: 4em;
+    text-align: right;
+}
+table#cart td.total {
+    width: 10%;
+    text-align: right;
+}
+table#cart td.vide {
+    text-align: center;
+    height: 5em;
+    font-style: italic;
+}
+
+div.totalHT {
+    text-align: right;
+    margin: 10px 0 0 450px;
+    padding: 8px;
+    font-size: 1.1em;
+    color: #333;
+    border: solid 1px #5e7433;
+    border-radius: 5px;
+}
+div.totalTTC {
+    background-color: #b4a42b;
+    text-align: right;
+    margin: 10px 0 0 450px;
+    padding: 8px;
+    font-size: 1.1em;
+    color: #333;
+    border: solid 1px #5e7433;
+    border-radius: 5px;
+}
+
+/* -- OLD --- */
+
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}

@@ -1,0 +1,99 @@
+[
+    {
+        "ref": "RFTG",
+        "name": "Race for the Galaxy",
+        "designer": "Thomas Lehmann",
+        "intro": "Votre objectif : construire l'empire spatial le plus puissant et prospère de tous les temps !",
+        "price": 24.99
+    },
+
+    {
+        "ref": "AGOT",
+        "name": "Le Trône de Fer",
+        "designer": "Christian T. Petersen",
+        "intro": "La lutte pour le Trône de Fer entre les grandes maisons de Westeros",
+        "price": 48.90
+    },
+
+    {
+        "ref": "TS",
+        "name": "Twilight Struggle",
+        "designer": "Jason Matthews, Ananda Gupta",
+        "intro": "Les luttes de pouvoir entre les deux grandes puissances en 45 ans de Guerre Froide.",
+        "price": 49.90
+    },
+
+
+    {
+        "ref": "HF",
+        "name": "High Frontier",
+        "designer": "Phil Eklund",
+        "intro": "L'aventure de l'espace, direction les planètes et astéroides du système solaire",
+        "price": 43.50
+    },
+
+    {
+        "ref": "ANT",
+        "name": "Antiquity",
+        "designer": "Jeroen Doumen, Joris Wiersinga",
+        "intro": "Développez votre civilisation à l'ère antique et choisissez votre objectif pour la victoire.",
+        "price": 77.90
+    },
+
+    {
+        "ref": "BRA",
+        "name": "Brass",
+        "designer": "Martin Wallace",
+        "intro": "Soyez au cœur de la révolution industrielle dans l'Angleterre du XVIIIème siècle.",
+        "price": 35.60
+    },
+
+    {
+        "ref": "AFAOS",
+        "name": "A Few Acres of Snow",
+        "designer": "Martin Wallace",
+        "intro": "La guerre anglo-française pour la conquête du Canada.",
+        "price": 31.90
+    },
+
+    {
+        "ref": "T&E",
+        "name": "Tigre et Euphrate",
+        "designer": "Reiner Knizia",
+        "intro": "Installez vos chefs à la tête des différents royaumes de Mésopotamie.",
+        "price": 42.00
+    },
+
+    {
+        "ref": "DVE",
+        "name": "De Vulgari Eloquentia",
+        "designer": "Mario Papini",
+        "intro": "L'histoire de la naissance de la langue italienne, à la fin du Moyen-Âge",
+        "price": 34.90
+    },
+
+    {
+        "ref": "WILD",
+        "name": "Wilderness War",
+        "designer": "Volko Ruhnke",
+        "intro": "Une simulation de la guerre entre les français et les anglais aux amériques de 1755 à 1760.",
+        "price": 48.00
+    },
+
+    {
+        "ref": "WW",
+        "name": "Washington's War",
+        "designer": "Mark Herman",
+        "intro": "La guerre d'indépendance américaine",
+        "price": 48.00
+    },
+
+    {
+        "ref": "IND",
+        "name": "Indonesia",
+        "designer": "Jeroen Doumen, Joris Wiersinga",
+        "intro": "Un jeu économique sur le développement industriel en Indonésie",
+        "price": 64.90
+    }
+
+]

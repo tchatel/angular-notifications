@@ -1,0 +1,22 @@
+<div id="game">
+
+    <img id="box" ng-if="game" ng-src="img/{{game.ref}}.jpg"/>
+
+    <div id="details">
+        <h2>{{game.name}}</h2>
+
+        <p class="designer">Auteur : {{game.designer}}</p>
+        <p class="intro">{{game.intro}}</p>
+        <p class="desc" ng-bind-html="game.desc"></p>
+    </div>
+    <div id="footer">
+        <span class="price">{{game.price | number:2}} €</span>
+        <button class="add" ng-click="addCart(game)">Ajouter au panier</button>
+    </div>
+    <div id="images">
+        <div class="image" ng-repeat="image in game.images">
+            <img ng-src="img/{{image}}"/>
+        </div>
+    </div>
+
+</div>

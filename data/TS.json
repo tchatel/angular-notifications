@@ -1,0 +1,9 @@
+{
+    "ref": "TS",
+    "name": "Twilight Struggle",
+    "designer": "Jason Matthews, Ananda Gupta",
+    "intro": "Les luttes de pouvoir entre les deux grandes puissances en 45 ans de Guerre Froide.",
+    "desc": "<p>Twilight Struggle est une simulation politique, économique et parfois militaire de la guerre froide. Le jeu retrace les 45 ans de conflit entre les deux blocs dans sa globalité : des guerres israelo-arabes jusqu'à la crise de Cuba, en passant par l'influence des mouvements pacifistes.</p><p>Le jeu est, dixit l'éditeur, directement inspiré du système de Hannibal et de We the People. En effet le jeu utilise le système des Card Driven Games. Chaque joueur dispose de cartes qu'il peut jouer à son tour et qui influent sur le déroulement du jeu.</p><p>Un joueur incarne le président des USA, l'autre le premier secrétaire du parti soviétique. Le jeu peut se finir à grand coup d'arme nucléaire...</p>",
+    "price": 49.90,
+    "images": ["TS-1.jpg","TS-2.jpg"]
+}

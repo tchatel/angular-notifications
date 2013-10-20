@@ -1,0 +1,9 @@
+{
+    "ref": "IND",
+    "name": "Indonesia",
+    "designer": "Jeroen Doumen, Joris Wiersinga",
+    "intro": "Un jeu économique sur le développement industriel en Indonésie",
+    "desc": "<p><i>En voyant le sourire narquois du Sultan de Solo, l'homme d'affaire venu du nord de Sumatra comprit qu'il avait faire une enorme erreur. Il a payé une fortune pour la fusion de sa compagnie de caoutchouc avec les vastes plantations de caoutchouc du Sultan alors qu'il n'y avait aucun bateau dans la région pour transporter ce caoutchouc jusqu'à la florissante Java. Et le Sultan a maintenant énormément de liquidités, il peut soudoyer les autorités de la ville pour que ses propres bateaux jouissent des meilleurs accès dans les ports disputés. Il peut aussi investir dans le bâtiment ou le pétrole. Mais un instant ... D'ou sort cet homme achetant toutes les voies maritimes ? Cela pourrait changer la donne ... Attendons voir ...</i></p> <p>Les joueurs s'affrontent pour bâtir une économie la plus fleurissante des île d'indonésie, tout en veillant à en ressortir les plus riches possible. L'économie commence à ses balbutiements par de l'agriculture, pour se développer jusqu'au stade de l'industrie légère, avec le pétrole et ... les plats préparés pour micro-ondes ...</p><p>Les joueurs pourront acquérir des compagnies, les faire évoluer. Celles-ci alimentront ainsi en denrées les villes de plus en plus gourmandes en besoins. Les compagnies maritimes assureront le transfer de ces marchandises, suivant leur capacité.</p><p>Toutes ces compagnies, contrôlées par les joueurs, pourront changer de main au grés des fusions ... quelque fois forcées mais toujours tumultueuses.</p>",
+    "price": 64.90,
+    "images": ["IND-1.jpg","IND-2.jpg"]
+}

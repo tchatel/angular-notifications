@@ -1,0 +1,22 @@
+
+<p>
+    Recherche : <input ng-model="search"/>
+</p>
+
+<p ng-hide="catalog">Chargement en cours...</p>
+<ul id="catalog">
+    <li ng-repeat="game in catalog | filter:search">
+        <div class="header">
+            <h3>{{game.name}}</h3>
+            <a href="#/game/{{game.ref}}"><img ng-src="img/{{game.ref}}.jpg"/></a>
+        </div>
+        <div class="text">
+            <p class="designer">Auteur : {{game.designer}}</p>
+            <p class="intro">{{game.intro}}</p>
+        </div>
+        <div class="footer">
+            <span class="price">{{game.price | number:2}} €</span>
+            <button class="add" ng-click="addCart(game)">Ajouter au panier</button>
+        </div>
+    </li>
+</ul>

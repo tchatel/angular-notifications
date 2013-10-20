@@ -1,0 +1,9 @@
+
+<div id="notifications" ng-controller="NotificationsCtrl">
+    <ul>
+        <li ng-repeat="notif in notifications">
+            <span ng-bind="notif.text"></span>
+            <a ng-if="canUndo(notif)" ng-click="undo(notif)" href="">Annuler</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="gamestore">
+<head>
+  <meta charset="utf-8">
+  <title>Game Store</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+  <h1>Game Store</h1>
+
+  <ul id="menu">
+      <li><a href="#/">Catalogue des jeux</a></li>
+      <li><a href="#/cart">Votre panier</a></li>
+  </ul>
+  <ng-include src="'partials/notifications.html'"></ng-include>
+
+  <div id="content" ng-controller="MainCtrl">
+      <div ng-view></div>
+
+      <p id="content-bottom"></p>
+  </div>
+
+  <div id="footer">
+      Les textes proviennent de <a href="http://trictrac.net">Tric Trac</a>,
+      et les images de <a href="http://boardgamegeek.com">BoardGameGeek</a>.
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-sanitize.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

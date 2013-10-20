@@ -1,0 +1,9 @@
+{
+    "ref": "WW",
+    "name": "Washington's War",
+    "designer": "Mark Herman",
+    "intro": "La guerre d'indépendance américaine",
+    "desc": "<p>Washington's War est un jeu <i>card-driven</i> qui utilise le contexte de la révolution Américaine. Le jeu oppose les forces du Roi George III aux forces coloniales américaines luttant pour leur indépendance.</p><p>Dans Washington's War, vous prendrez en charge l'une des deux armées :</p><p>- Le Roi d'Angleterre qui tente de ramener les colonies rebelles au sein de l'Empire tout en gardant un oeil sur d'anciens ennemis prêts à se venger et à reprendre leurs biens perdus lors de la Guerre des Sept Ans.</p><p>OU</p><p>- Les Indépendantistes qui combattent les troupes anglaises tout en essayant de rallier leurs compatriotes à la cause de la liberté.</p>",
+    "price": 48.00,
+    "images": ["WW-1.jpg","WW-2.jpg"]
+}

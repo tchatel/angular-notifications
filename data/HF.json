@@ -1,0 +1,9 @@
+{
+    "ref": "HF",
+    "name": "High Frontier",
+    "designer": "Phil Eklund",
+    "intro": "L'aventure de l'espace, direction les planètes et astéroides du système solaire",
+    "desc": "High Frontier est un jeu de simulation d'un voyage en fusée dans l'espace, et d'exploitation industrielle des ressources découvertes lors de ce voyage interplanétaire.<br/><br/>Dans ce jeu, les joueurs seront à la tête d'une agence spatiale, et développeront leur fusée, et la feront décoller afin d'explorer le système solaire, et y exploiter ses ressources.<br/><br/>Il faudra notamment trouver de l'eau (utilisée comme combustible pour propulser sa fusée toujours plus loin). Ensuite établir des usines extraterrestres qui permettront de fabriquer des produits issus de technologies inconnues sur terre.<br/><br/>Chaque usine rapporte des points de victoire. Le gagnant sera le joueur ayant le plus depoints de victoire en fin de partie.",
+    "price": 43.50,
+    "images": ["HF-1.jpg","HF-2.jpg"]
+}
