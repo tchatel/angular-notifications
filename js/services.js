@@ -8,11 +8,7 @@ angular.module('gamestore.services', [])
     return {
         getList: function () {
             return $http.get("data/catalog.json").then(function (response) {
-                var list = {};
-                for (var i = 0 ; i < response.data.length ; i++) {
-                    list[response.data[i].ref] = response.data[i];
-                }
-                return list;
+                return response.data;
             });
         },
         getItem: function (ref) {
