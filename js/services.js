@@ -2,10 +2,9 @@
 
 /* Services */
 
-var moduleSrv = angular.module('gamestore.services', []);
+angular.module('gamestore.services', [])
 
-
-moduleSrv.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
+.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
     return {
         getList: function () {
             return $http.get("data/catalog.json").then(function (response) {
@@ -22,13 +21,11 @@ moduleSrv.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
             });
         }
     };
-}]);
+}])
 
+.value('tva', 19.6)
 
-
-moduleSrv.value('tva', 19.6);
-
-moduleSrv.factory('cart', ['tva', 'notification', function (tva, notification) {
+.factory('cart', ['tva', 'notification', function (tva, notification) {
     return {
         rows: {},
         add: function (game) {

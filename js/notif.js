@@ -1,8 +1,8 @@
 'use strict';
 
-var moduleNoti = angular.module('notif', []);
+angular.module('notif', [])
 
-moduleCtrl.controller('NotificationsCtrl', ['$scope', 'notification', function ($scope, notification) {
+.controller('NotificationsCtrl', ['$scope', 'notification', function ($scope, notification) {
 
     $scope.notifications = notification.list;
     $scope.canUndo = function (notification) {
@@ -12,9 +12,9 @@ moduleCtrl.controller('NotificationsCtrl', ['$scope', 'notification', function (
         angular.isFunction(notification.undo) && notification.undo();
     };
 
-}]);
+}])
 
-moduleSrv.factory('notification', ['$timeout', function ($timeout) {
+.factory('notification', ['$timeout', function ($timeout) {
 
     var service = {
         list: {},
