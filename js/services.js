@@ -39,6 +39,9 @@ angular.module('gamestore.services', [])
                 };
             }
         },
+        amount: function (row) {
+            return row.qty * row.game.price;
+        },
         total: function () {
             var sum = 0;
             for (var i in this.rows) {
