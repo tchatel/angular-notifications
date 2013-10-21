@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('gamestore', ['ngRoute', 'ngSanitize', 'gamestore.controllers', 'gamestore.services', 'gamestore.filters', 'gamestore.directives']).
+angular.module('gamestore', ['gamestore.controllers', 'gamestore.services', 'gamestore.filters', 'gamestore.directives',
+                             'notif',
+                             'ngRoute', 'ngSanitize']).
   config(['$routeProvider', function($routeProvider) {
 
     $routeProvider.when('/catalog',   {templateUrl: 'partials/catalog.html', controller: 'CatalogCtrl'});
