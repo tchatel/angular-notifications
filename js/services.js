@@ -56,7 +56,7 @@ moduleSrv.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
 
 moduleSrv.value('tva', 19.6);
 
-moduleSrv.factory('cart', ['tva', 'notification', function (TVA, notification) {
+moduleSrv.factory('cart', ['tva', 'notification', function (tva, notification) {
     return {
         rows: {},
         add: function (game) {
@@ -78,7 +78,7 @@ moduleSrv.factory('cart', ['tva', 'notification', function (TVA, notification) {
             return sum;
         },
         totalHT: function () {
-            return this.total() * 100 / (100 + TVA);
+            return this.total() * 100 / (100 + tva);
         },
         empty: function () {
             return Object.keys(this.rows).length == 0;
