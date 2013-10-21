@@ -16,12 +16,12 @@ moduleSrv.factory('notification', ['$timeout', function ($timeout) {
                 canUndo: function () {
                     return angular.isFunction(undo);
                 },
-                undo: angular.isFunction(undo)
-                    ? function () {
+                undo: function () {
+                    if (angular.isFunction(undo)) {
                         delete service.list[timestamp];
                         undo();
                     }
-                    : null
+                }
             };
             $timeout(function () {
                 delete service.list[timestamp];
