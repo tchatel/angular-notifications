@@ -2,23 +2,15 @@
 
 angular.module('notif', [])
 
-.controller('NotificationsCtrl', ['$scope', 'notification', function ($scope, notification) {
-
+.controller('NotificationsCtrl', ['$scope', 'notification',
+                                  function ($scope, notification) {
     $scope.notifications = notification.list;
-    $scope.canUndo = function (notification) {
-        return angular.isFunction(notification.undo);
-    };
-    $scope.undo = function (notification) {
-        angular.isFunction(notification.undo) && notification.undo();
-    };
-
 }])
 
-.factory('notification', ['$timeout', function ($timeout) {
-
+.factory('notification', ['$timeout',
+                          function ($timeout) {
     var service = {
         list: {},
-
         add: function (text, undo, delay) {
             var timestamp = (new Date()).getTime();
             service.list[timestamp] = {
@@ -38,7 +30,6 @@ angular.module('notif', [])
             }, (delay || 5) * 1000);
         }
     };
-
     return service;
 }]);
 
