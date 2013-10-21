@@ -4,18 +4,6 @@
 
 angular.module('gamestore.controllers', ['gamestore.services'])
 
-.controller('NotificationsCtrl', ['$scope', 'notification', function ($scope, notification) {
-
-    $scope.notifications = notification.list;
-    $scope.canUndo = function (notification) {
-        return angular.isFunction(notification.undo);
-    };
-    $scope.undo = function (notification) {
-        angular.isFunction(notification.undo) && notification.undo();
-    };
-
-}])
-
 .controller('MainCtrl', ['$scope', '$location', 'cart', function ($scope, $location, cart) {
     $scope.addCart = function (game) {
         cart.add(game);
