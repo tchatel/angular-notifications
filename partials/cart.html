@@ -14,7 +14,7 @@
         <td class="item"><a href="#/game/{{row.game.ref}}">{{row.game.name}}</a></td>
         <td class="price">{{row.game.price | number:2}} €</td>
         <td class="qty"><input class="qty" ng-model="row.qty"/></td>
-        <td class="total">{{row.game.price * row.qty | number:2}} €</td>
+        <td class="total">{{cart.amount(row) | number:2}} €</td>
         <td class="remove"><a ng-click="cart.remove(row)" href=""><img src="img/delete.png"/></a></td>
     </tr>
     <tr ng-show="cart.empty()">

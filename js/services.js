@@ -2,46 +2,15 @@
 
 /* Services */
 
-var moduleSrv = angular.module('gamestore.services', []);
+angular.module('gamestore.services', [])
 
-moduleSrv.factory('notification', ['$timeout', function ($timeout) {
+.value('search', {})
 
-    var service = {
-        list: {},
-
-        add: function (text, undo, delay) {
-            var timestamp = (new Date()).getTime();
-            service.list[timestamp] = {
-                text: text,
-                canUndo: function () {
-                    return angular.isFunction(undo);
-                },
-                undo: function () {
-                    if (angular.isFunction(undo)) {
-                        delete service.list[timestamp];
-                        undo();
-                    }
-                }
-            };
-            $timeout(function () {
-                delete service.list[timestamp];
-            }, (delay || 5) * 1000);
-        }
-    };
-
-    return service;
-}]);
-
-
-moduleSrv.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
+.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
     return {
         getList: function () {
             return $http.get("data/catalog.json").then(function (response) {
-                var list = {};
-                for (var i = 0 ; i < response.data.length ; i++) {
-                    list[response.data[i].ref] = response.data[i];
-                }
-                return list;
+                return response.data;
             });
         },
         getItem: function (ref) {
@@ -50,13 +19,11 @@ moduleSrv.factory('catalogPromise', ['$http', '$q', function ($http, $q) {
             });
         }
     };
-}]);
+}])
 
+.value('tva', 19.6)
 
-
-moduleSrv.value('tva', 19.6);
-
-moduleSrv.factory('cart', ['tva', 'notification', function (tva, notification) {
+.factory('cart', ['tva', 'notification', function (tva, notification) {
     return {
         rows: {},
         add: function (game) {
@@ -69,6 +36,9 @@ moduleSrv.factory('cart', ['tva', 'notification', function (tva, notification) {
                     qty: 1
                 };
             }
+        },
+        amount: function (row) {
+            return row.qty * row.game.price;
         },
         total: function () {
             var sum = 0;

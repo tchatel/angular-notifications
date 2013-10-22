@@ -1,11 +1,11 @@
 
 <p>
-    Recherche : <input ng-model="search"/>
+    Recherche : <input ng-model="search.text"/>
 </p>
 
 <p ng-hide="catalog">Chargement en cours...</p>
 <ul id="catalog">
-    <li ng-repeat="game in catalog | filter:search">
+    <li ng-repeat="game in catalog | filter:search.text">
         <div class="header">
             <h3>{{game.name}}</h3>
             <a href="#/game/{{game.ref}}"><img ng-src="img/{{game.ref}}.jpg"/></a>

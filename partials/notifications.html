@@ -3,7 +3,7 @@
     <ul>
         <li ng-repeat="notif in notifications">
             <span ng-bind="notif.text"></span>
-            <a ng-if="canUndo(notif)" ng-click="undo(notif)" href="">Annuler</a>
+            <a ng-if="notif.canUndo()" ng-click="notif.undo()" href="">Annuler</a>
         </li>
     </ul>
 </div>
