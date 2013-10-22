@@ -4,6 +4,8 @@
 
 angular.module('gamestore.services', [])
 
+.value('search', {})
+
 .factory('catalogPromise', ['$http', '$q', function ($http, $q) {
     return {
         getList: function () {

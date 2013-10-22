@@ -12,11 +12,13 @@ angular.module('gamestore.controllers', ['gamestore.services'])
     }
 }])
 
-.controller('CatalogCtrl', ['$scope', 'catalogPromise',
-                            function ($scope, catalogPromise) {
+.controller('CatalogCtrl', ['$scope', 'catalogPromise', 'search',
+                            function ($scope, catalogPromise, search) {
     catalogPromise.getList().then(function (data) {
         $scope.catalog = data;
     });
+
+    $scope.search = search;
 }])
 
 .controller('GameCtrl', ['$scope', '$routeParams', 'catalogPromise',
